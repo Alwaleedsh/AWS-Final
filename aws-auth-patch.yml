@@ -6,10 +6,10 @@ data:
       - system:nodes
       rolearn: arn:aws:iam::676430441619:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-1KNMEF0IXVXU6
       username: system:node:{{EC2PrivateDNSName}}
-      - groups:
-        - system:masters
-        rolearn: arn:aws:iam::676430441619:role/myEKSClusterRole
-        username: build
+    - groups:
+      - system:masters
+      rolearn: arn:aws:iam::676430441619:role/myEKSClusterRole
+      username: build
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-10-10T17:28:41Z"
